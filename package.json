@@ -1,0 +1,51 @@
+{
+  "name": "paste-sync",
+  "private": true,
+  "version": "0.1.0",
+  "author": "Amos Ayomide",
+  "description": "A modern, neo-brutalist clipboard sharing application with local JSON storage.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amosayomide05/paste"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "client": "vite",
+    "server": "node server/index.js",
+    "server:dev": "PORT=4112 node server/index.js",
+    "start": "node server/index.js",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "date-fns": "^3.3.1",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.344.0",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.1",
+    "tailwind-merge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
